@@ -2,7 +2,7 @@
 
 /**
  * main - simple shell
- * @arg_count: count of arguments
+ * @ac: count of arguments
  * @argv: arguments
  * Return: 0 (success)
 */
