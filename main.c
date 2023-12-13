@@ -1,15 +1,17 @@
 #include "main.h"
+
 /**
  * main - simple shell
  * @arg_count: count of arguments
  * @argv: arguments
  * Return: 0 (success)
 */
+
 int main(int arg_count, char **argv)
 {
 char *inputs = NULL, **commands = NULL;
 int out_log = 0, ind = 0;
-(void) arg_count;
+
 while (1)
 {
 inputs = take_inputs();
