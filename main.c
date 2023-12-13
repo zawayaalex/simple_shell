@@ -3,14 +3,14 @@
 /**
  * main - simple shell
  * @ac: count of arguments
- * @argv: arguments
+ * @av: arguments
  * Return: 0 (success)
 */
 
-int main(int ac, char **argv)
+int main(int ac, char **av)
 {
 char *inputs = NULL, **commands = NULL;
-int out_log = 0, ind = 0;
+int out_log = 0, ind = 0, *ptr = &out_log;
 (void) ac;
 while (1)
 {
@@ -32,11 +32,11 @@ continue;
 }
 if (is_inside(commands[0]))
 {
-inside_deal(commands, argv, &out_log, ind);
+inside_deal(commands, av, ptr, ind);
 }
 else
 {
-out_log = _execute(commands, argv, ind);
+out_log = _execute(commands, av, ind);
 }
 }
 }
