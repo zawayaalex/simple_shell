@@ -7,11 +7,11 @@
  * Return: 0 (success)
 */
 
-int main(int arg_count, char **argv)
+int main(int ac, char **argv)
 {
 char *inputs = NULL, **commands = NULL;
 int out_log = 0, ind = 0;
-
+(void) ac;
 while (1)
 {
 inputs = take_inputs();
