@@ -9,17 +9,16 @@
 
 char *_getpath(char *commands)
 {
+int i;
 char *path_loc, *tot_cmd, *path_dir;
 struct stat s;
 
-for (int i = 0; commands[i]; i++)
+for (i = 0; commands[i]; i++)
 {
 if (commands[i] == '/')
 {
 if (stat(commands, &s) == 0) /*path exist?*/
-{
 return (_strdup(commands));
-}
 else
 return (NULL);
 }
