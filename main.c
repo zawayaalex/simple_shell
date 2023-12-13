@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - simple shell
+ * main - simple shell project
  * @ac: count of arguments
  * @av: arguments
  * Return: 0 (success)
